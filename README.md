@@ -69,3 +69,9 @@ export class AppComponent {
     <ion-title>
 ...
 ```
+
+
+## Create Tabs's Step
+
+ionic generate module tabs --routing
+ionic generate component tabs/tabs --flat
