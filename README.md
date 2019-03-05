@@ -73,5 +73,41 @@ export class AppComponent {
 
 ## Create Tabs's Step
 
-ionic generate module tabs --routing
-ionic generate component tabs/tabs --flat
+```cmd
+ionic g page tabs 
+```
+
+#### app-routing.module.ts
+```typeScript
+const routes: Routes = [
+  { path: '', redirectTo: 'tabs', pathMatch: 'full' },
+  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
+];
+```
+
+#### tabs.module.ts
+```typeScript
+const routes: Routes = [
+  {
+    path: '',
+    component: TabsPage,
+    children:[
+      { path: '', redirectTo: '<firstPath>' , pathMatch: 'full'},
+      { path: '<pathName>', loadChildren: '<pathModuleFile>#<pathModule>' },
+      { path: 'test1', loadChildren: '../test1/test1.module#Test1PageModule' }
+    ]
+  }
+];
+```
+
+#### tabs.page.html
+```html
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="<tab>">
+      <ion-icon name="<iconName>"></ion-icon>
+      <ion-label><tabName></ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+```

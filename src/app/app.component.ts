@@ -10,9 +10,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
   public appMenu = [
-    {title: 'Test1', url: '/test1', icon: 'list'},
-    {title: 'Test2', url: '/test2', icon: 'add'},
-    {title: 'Test3', url: '/test3', icon: 'trash'}
+    {title: 'Test1', url: '/tabs/test1', icon: 'list'},
+    {title: 'Test2', url: '/tabs/test2', icon: 'add'},
+    {title: 'Test3', url: '/tabs/test3', icon: 'trash'}
   ];
 
   constructor(
