@@ -70,6 +70,19 @@ export class AppComponent {
 ...
 ```
 
+#### test1.page.html
+```html
+...
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button
+              text=""
+              defaultHref="tabs/home">
+          </ion-back-button>
+        </ion-buttons>
+...
+```
+
 
 ## Create Tabs's Step
 
