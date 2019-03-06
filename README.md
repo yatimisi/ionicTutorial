@@ -75,11 +75,11 @@ export class AppComponent {
 ...
   <ion-toolbar>
       <ion-buttons slot="start">
-          <ion-back-button
-              text=""
-              defaultHref="tabs/home">
-          </ion-back-button>
-        </ion-buttons>
+        <ion-back-button
+            text=""
+            defaultHref="tabs/home">
+        </ion-back-button>
+      </ion-buttons>
 ...
 ```
 
